@@ -1,0 +1,10 @@
+<%= simple_form_for @etape, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :nom %>
+  <%= f.input :rappel %>
+  <%= f.collection_select :parent_id, Etape.all, :id, :nom, {:include_blank => t('helpers.etape.aucun')} %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                etapes_path, :class => 'btn' %>
+  </div>
+<% end %>

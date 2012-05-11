@@ -1,0 +1,8 @@
+fr:
+  helpers:
+    etape:
+      etape_suivante: "Etape suivante"
+      etape: "Etape"
+      aucun: "Aucun"
+    links:
+      new: "Nouveau"
